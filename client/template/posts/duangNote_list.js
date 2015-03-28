@@ -14,7 +14,7 @@
 ];
 Template.noteList.helpers({
     posts: noteData
-});*/
+});*/非Collection存储
 Template.noteList.helpers({
     posts : function() {
         return Posts.find();
