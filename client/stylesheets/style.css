@@ -1,9 +1,5 @@
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
-html {
-    font-family: sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
-}
+
 
 body {
     margin: 0
@@ -6840,6 +6836,13 @@ a.card {
 html.turbolinks-progress-bar::before {
     background-color: #e91e63 !important;
     height: 2px !important
+}
+
+button{
+    background:#2196f3;
+    padding: inherit;
+    border: inherit;
+
 }
 
 

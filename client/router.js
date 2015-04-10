@@ -22,3 +22,6 @@ Router.route('/restful', {where: 'server'})
     .post(function () {
         this.response.end('post request\n');
     });*/
+
+Router.route('/new', {name: 'newNote'});
+

@@ -1,14 +1,4 @@
 <template name="header">
-    <style>
-        button{
-            background:#2196f3;
-            padding: inherit;
-            border: inherit;
-
-        }
-
-    </style>
-
     <div class="appbar appbar-primary appbar-fixed ">
         <div class="toolbar">
             <div class="toolbar-action">
@@ -17,7 +7,7 @@
             </div>
             <div class="toolbar-title">DuangNote</div>
             <div class="toolbar-action">
-                <a class="button button-flat" href="/client/new">
+                <a class="button button-flat" href="{{pathFor 'newNote'}}">
                     <i class="glyphicon glyphicon-plus-sign"></i>
                     新记事
                 </a>
@@ -28,7 +18,7 @@
         </div>
 
         <div class="tabs">
-            <div class="tab">
+            <div class="tab active">
                 <a href="">全部笔记</a>
             </div>
             <div class="tab"><!--active-->
@@ -42,5 +32,27 @@
             </div>
 
         </div>
+    </div>
+</template>
+
+<template name="simpleHeader">
+    <div class="appbar appbar-primary appbar-fixed ">
+        <div class="toolbar">
+            <div class="toolbar-action">
+                <button class="glyphicon glyphicon-list">
+                </button>
+            </div>
+            <div class="toolbar-title">DuangNote</div>
+            <div class="toolbar-action">
+                <a class="button button-flat" href="{{pathFor 'newNote'}}">
+                    <i class="glyphicon glyphicon-plus-sign"></i>
+                    新记事
+                </a>
+            </div>
+            <div class="toolbar-action">
+                <button class="glyphicon glyphicon-bell"></button>
+            </div>
+        </div>
+        <br/><br/><br/>
     </div>
 </template>
